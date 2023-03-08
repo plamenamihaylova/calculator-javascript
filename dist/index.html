@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.min.css" />
+    <script src="js/main.js" type="module"></script>
+  </head>
+  <body>
+    <main class="calc">
+      <div class="calc__result">
+        <p class="upper-line"></p>
+        <p class="lower-line">0</p>
+      </div>
+
+      <div class="calc__actions">
+        <!-- line one -->
+        <button class="calc__actions__btn clear">ce</button>
+        <button class="calc__actions__btn clear-all">c</button>
+        <button class="calc__actions__btn del">del</button>
+        <button class="calc__actions__btn operator devide">/</button>
+        <!-- line two -->
+        <button class="calc__actions__btn num one">1</button>
+        <button class="calc__actions__btn num two">2</button>
+        <button class="calc__actions__btn num three">3</button>
+        <button class="calc__actions__btn operator multiply">*</button>
+        <!-- line three -->
+        <button class="calc__actions__btn num four">4</button>
+        <button class="calc__actions__btn num five">5</button>
+        <button class="calc__actions__btn num six">6</button>
+        <button class="calc__actions__btn operator substract">-</button>
+        <!-- line four -->
+        <button class="calc__actions__btn num seven">7</button>
+        <button class="calc__actions__btn num eight">8</button>
+        <button class="calc__actions__btn num nine">9</button>
+        <button class="calc__actions__btn operator add">+</button>
+        <!-- line five -->
+        <button class="calc__actions__btn change-sign">+/-</button>
+        <button class="calc__actions__btn num zero">0</button>
+        <button class="calc__actions__btn decimal-point">.</button>
+        <button class="calc__actions__btn equal">=</button>
+      </div>
+    </main>
+  </body>
+</html>

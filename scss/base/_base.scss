@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Anton", sans-serif;
+  font-size: 2rem;
+  color: $text-color;
+}
+
+body {
+  height: 100vh;
+  @include flexCenter;
+  background-color: $bg-color;
+}
+
+main {
+  @include maxWidth(600px) {
+    height: min(85%, 500px);
+    width: min(85%, 300px);
+  }
+
+  @include minWidth(600px) {
+    height: min(80%, 500px);
+    width: min(80%, 300px);
+  }
+
+  @include minWidth(768px) {
+    height: min(80%, 520px);
+    width: min(80%, 320px);
+  }
+
+  @include minWidth(992px) {
+    height: min(80%, 560px);
+    width: min(80%, 340px);
+  }
+
+  @include minWidth(1200px) {
+    min-height: min(80%, 640px);
+    width: min(80%, 380px);
+  }
+
+  @include landscape() {
+    height: min(90%, 340px);
+    width: min(90%, 500px);
+  }
+}
